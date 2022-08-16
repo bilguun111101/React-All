@@ -1,0 +1,122 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    margin: 0%; padding: 0%;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.background-imformation-div {
+    height: 100%;
+    width: 100%;
+    padding: 0 5em;
+    display: flex;
+    padding: 5em;
+}
+
+.background-imformation {
+    display: flex;
+    color: #FFF;
+    height: 46vh;
+    width: 100%;
+}
+
+.imformation-back-write {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imformation-back-write img {
+    width: 450px;
+    height: auto;
+}
+
+.imformation-back-write h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+@media (max-width: 1018px) {
+    .imformation-back-write img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.dc-comics {
+    color: #000;
+    text-shadow: 0 0 7px #FFF;
+    transition: .5s;
+    cursor: pointer;
+}
+.dc-comics:hover {
+    color: #FFF;
+    text-shadow: 0 0 11px;
+}
+
+.imformation-back-btns {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imformation-back-btns h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.imformation-back-btns div {
+    display: flex;
+    align-items: center;
+}
+
+.imformation-back-btns div button {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    background: orange;
+    border-radius: 6px;
+    border: 0.3px solid #FFF;
+    box-shadow: 0 0 3px #FFF;
+    transition: .4s;
+}
+
+.imformation-back-btns p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    text-shadow: 0 0 3px #FFF;
+}
+
+.imformation-back-btns div button:hover {
+    background: #000;
+    color: #FFF;
+}
+
+.imformation-back-btns div button:first-child {
+    margin-right: 1rem;
+}
+
+@media (max-width: 1018px) {
+    .background-imformation {
+        display: block;
+    }
+    .imformation-back-btns {
+        display: none;
+    }
+    .imformation-back-write {
+        width: 100%;
+    }
+}

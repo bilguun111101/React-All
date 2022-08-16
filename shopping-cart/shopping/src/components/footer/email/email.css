@@ -1,0 +1,56 @@
+.email-imformation {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5em;
+    border-top: 1px solid #FFF;
+    padding-top: 2rem;
+}
+.email-imformation h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+    margin-left: 0.6rem;
+    margin-bottom: 2rem;
+}
+.email-input-nav {
+    width: 50%;
+    height: 100%;
+}
+.email-input-nav input {
+    width: 100%;
+    height: 8vh;
+    padding: 0% 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border: none;
+    color: #FFF;
+    border-radius: 2rem;
+    background: transparent;
+    outline: none;
+}
+
+.contact-email-us {
+    height: 100%;
+    width: 50%;
+    padding-right: 2rem;
+}
+.contact-email-us h1 {}
+
+.contact-email-us p{
+    margin-left: 0.6rem;
+    color: #FFF;
+}
+
+@media (max-width: 1018px) {
+    .email-imformation {
+        display: block;
+        padding: 0 0;
+    }
+    .email-imformation nav {
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid #FFF;
+    }
+}

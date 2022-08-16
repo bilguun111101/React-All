@@ -1,0 +1,218 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    margin: 0%; padding: 0%;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.navbar {
+    padding: 1rem 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: .4s;
+}
+.navbar img:active {
+    opacity: 0.4;
+}
+
+.some-li {
+    display: flex;
+    gap: 2rem;
+}
+
+.bar-btn {
+    display: none;
+    color: #FFF;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    transition: .4s;
+    justify-content: center;
+    position: relative;
+}
+
+.bar-btn::before {
+    content: '';
+    width: 35px;
+    height: 4px;
+    position: absolute;
+    transform: translateY(-10px);
+    border-radius: 2px;
+    box-shadow: 0 10px 0 #FFF;
+    background: #FFF;
+}
+
+.bar-btn::after {
+    content: '';
+    width: 35px;
+    height: 4px;
+    position: absolute;
+    transform: translateY(10px);
+    border-radius: 2px;
+    background: #FFF;
+}
+
+.bar-btn:active {
+    opacity: 0.8;
+}
+
+@media (max-width: 1018px) {
+    .bar-btn {
+        display: flex;
+    }
+    .some-li {
+        position: fixed;
+        width: 300px;
+        height: 370px;
+        top: 6rem;
+        opacity: 0;
+        right: -400%;
+        padding: 1rem;
+        display: block;
+        transition: .1s;
+        background: #000;
+        border: 0.1px solid #FFF;
+    }
+    .navbar ul li {
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+    .active {
+        right: -0.1%;
+        opacity: 1;
+    }   
+}
+
+.navbar ul li {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #FFF;
+    transition: .4s;
+}
+
+.navbar ul li:hover {
+    color: orange;
+}
+.navbar ul li:active {
+    opacity: 0.7;
+}
+
+.sign-log-btn button{
+    font-size: 1.4rem;
+    padding: 0.3rem 1rem;
+    background: #FFF;
+    color: #000;
+    border: 1px solid #000;
+    transition: .4s;
+}
+.sign-log-btn button:hover {
+    background: transparent;
+    color: #FFF;
+}
+.sign-log-btn button:active {
+    opacity: 0.4;
+}
+.sign-log-btn button:first-child {
+    margin-right: 2rem;
+}
+
+.cart-section {
+    position: fixed;
+    width: 40%;
+    left: -400%;
+    transition: .4s;
+    top: 0%;
+    height: 190vh;
+    /* background: #004C93; */
+    background: #000;
+    color: #FFF;
+    padding: 2rem;
+}
+
+@media (max-width: 1086px) {
+    .cart-section {
+        width: 100%;
+    }
+}
+
+.close-cart-btn {
+    position: absolute;
+    top: 10px;
+    color: #FFF;
+    font-size: 3rem;
+    right: 10px;
+}
+.close-cart-btn img {
+    width: 70px;
+    height: auto;
+}
+
+.cart-product h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.your-cart-product {
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    border: 1px solid #000;
+}
+.total-cart-product {
+    position: absolute;
+    right: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.per-product {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.per-product span {
+    padding: 0.6rem;
+    width: 50%;
+}
+.per-product span img {
+    width: 100%;
+    height: auto;
+}
+.per-product span h2 {
+    font-size: 2.5rem;
+}
+
+.cost-cart-product {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.per-product span h4 {
+    margin-top: 2rem;
+}
+.product-close {
+    position: absolute;
+    color: #FFF;
+    font-size: 2rem;
+    right: 0.6rem;
+    top: 0.6rem;
+}
+.product-close:active {
+    opacity: 0.8;
+}
+
+.active-cart {
+    left: 0%;
+}
